@@ -27,7 +27,7 @@ if (document.getElementById("enterwebsite").value == "") {
 	document.getElementById("displaymobile").style.display = "none";		
 	document.getElementById("displaymobile").innerHTML = "";
 	}else{
-	document.getElementById("displaymobile").innerHTML = "<strong class='textcolor' style='color: #005006;'>m:</strong> <span id='footermobile'></span>";
+	document.getElementById("displaymobile").innerHTML = "<strong class='textcolor' style='color: #ac0000;'>m:</strong> <span id='footermobile'></span>";
 	document.getElementById("footermobile").innerHTML = document.getElementById("entermobile").value;
 	document.getElementById("displaymobile").style.display = "block";
 	};
@@ -35,7 +35,7 @@ if (document.getElementById("enterwebsite").value == "") {
 	document.getElementById("displaynumber").style.display = "none";
 	document.getElementById("displaynumber").innerHTML = "";
 	}else{
-	document.getElementById("displaynumber").innerHTML = "<strong class='textcolor' style='color: #005006;'>p:</strong> <span id='footernumber'></span>";
+	document.getElementById("displaynumber").innerHTML = "<strong class='textcolor' style='color: #ac0000;'>p:</strong> <span id='footernumber'></span>";
 	document.getElementById("footernumber").innerHTML = document.getElementById("enternumber").value;
 	document.getElementById("displaynumber").style.display = "block";
 	};
@@ -43,7 +43,7 @@ if (document.getElementById("enterwebsite").value == "") {
 	document.getElementById("displayemail").style.display = "none";
 	document.getElementById("displayemail").innerHTML = "";
 	}else{
-	document.getElementById("displayemail").innerHTML = "<strong class='textcolor' style='color: #005006;'>e:</strong> <span id='footeremail'></span>";
+	document.getElementById("displayemail").innerHTML = "<strong class='textcolor' style='color: #ac0000;'>e:</strong> <span id='footeremail'></span>";
 	document.getElementById("footeremail").innerHTML = document.getElementById("enteremail").value;
 	document.getElementById("displayemail").style.display = "block";
 	};
