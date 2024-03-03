@@ -31,6 +31,14 @@ if (document.getElementById("enterwebsite").value == "") {
 	document.getElementById("footermobile").innerHTML = document.getElementById("entermobile").value;
 	document.getElementById("displaymobile").style.display = "block";
 	};
+	if (document.getElementById("enterwebsite").value == "") {
+	document.getElementById("displaywebsite").style.display = "none";		
+	document.getElementById("displaywebsite").innerHTML = "";
+	}else{
+	document.getElementById("displaywebsite").innerHTML = "<strong class='textcolor' style='color: #ac0000;'>m:</strong> <span id='footermobile'></span>";
+	document.getElementById("footerwebsite").innerHTML = document.getElementById("entermobile").value;
+	document.getElementById("displaywebsite").style.display = "block";
+	};
 	if (document.getElementById("enternumber").value == ""){
 	document.getElementById("displaynumber").style.display = "none";
 	document.getElementById("displaynumber").innerHTML = "";
