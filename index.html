@@ -36,15 +36,15 @@
                 <table>
                     <tr>
                         <td style="vertical-align: top">
-                            <p><label id="entername">Name:</label> <input type="text" value="Ben Jones" id="entername">
+                            <p><label for="entername">Name:</label> <input type="text" value="Ben Jones" id="entername">
                             </p>
-                            <p><label id="enterposition">Position:</label> <input type="text" value="Head Teacher TAS"
+                            <p><label for="enterposition">Position:</label> <input type="text" value="Head Teacher TAS"
                                     id="enterposition"></p>
                         </td>
                         <th style="vertical-align: top">
-                            <p><label id="entermobile">Mobile Number:</label> <input type="text" value=""
+                            <p><label for="entermobile">Mobile Number:</label> <input type="text" value=""
                                     id="entermobile"></p>
-                            <p><label id="enteremail">Email Address:</label> <input type="text"
+                            <p><label for="enteremail">Email Address:</label> <input type="text"
                                     value="benjamin.jones21@det.nsw.edu.au" id="enteremail"></p>
                         </th>
                     </tr>
@@ -73,28 +73,28 @@
                                     value="#1a2325" id="enteraltcolour"></p>
                         </td>
                         <td style="vertical-align: top">
-                            <p><label for="enterfacebook">Social Media URL 1:</label> <input type="text"
+                            <p><label for="enterinstagram">Social Media URL 1:</label> <input type="text"
+                                    value="https://www.instagram.com/tempe_hs/" id="enterinstagram"></p>
+                            <p><label for="enterinstagramicon">Social Media Icon 1:</label> <input type="text"
+                                    value="https://cdn-icons-png.flaticon.com/512/1384/1384031.png"
+                                    id="enterinstagramicon"></p>
+                            <p><label for="enterinstagramalt">Social Media Alt Text 1:</label> <input type="text"
+                                    value="Instagram icon" id="enterinstagramalt"></p>
+                            <p><label for="enterfacebook">Social Media URL 2:</label> <input type="text"
                                     value="https://www.facebook.com/TempeHighSRCInfo" id="enterfacebook"></p>
-                            <p><label for="enterfacebookicon">Social Media Icon 1:</label> <input type="text"
+                            <p><label for="enterfacebookicon">Social Media Icon 2:</label> <input type="text"
                                     value="https://cdn-icons-png.flaticon.com/512/20/20837.png" id="enterfacebookicon">
                             </p>
-                            <p><label for="enterfacebookalt">Social Media Alt Text 1:</label> <input type="text"
+                            <p><label for="enterfacebookalt">Social Media Alt Text 2:</label> <input type="text"
                                     value="Facebook icon" id="enterfacebookalt"></p>
                             <p><label for="entertwitter">Social Media URL 2:</label> <input type="text"
-                                    value="https://www.instagram.com/tempe_hs/" id="entertwitter"></p>
+                                    value="https://twitter.com/high_tempe" id="entertwitter"></p>
                             <p><label for="entertwittericon">Social Media Icon 2:</label> <input type="text"
-                                    value="https://cdn-icons-png.flaticon.com/512/1384/1384031.png"
+                                    value="https://cdn-icons-png.flaticon.com/512/11823/11823292.png"
                                     id="entertwittericon">
                             </p>
                             <p><label for="entertwitterialt">Social Media Alt Text 2:</label> <input type="text"
-                                    value="Instagram icon" id="entertwitteralt"></p>
-                            <p><label for="enterinstagram">Social Media URL 3:</label> <input type="text"
-                                    value="https://twitter.com/high_tempe" id="enterinstagram"></p>
-                            <p><label for="enterinstagramicon">Social Media Icon 3:</label> <input type="text"
-                                    value="https://cdn-icons-png.flaticon.com/512/11823/11823292.png"
-                                    id="enterinstagramicon"></p>
-                            <p><label for="enterinstagramalt">Social Media Alt Text 3:</label> <input type="text"
-                                    value="Twitter icon" id="enterinstagramalt"></p>
+                                    value="Twitter icon" id="entertwitteralt"></p>
                         </td>
                     </tr>
                 </table>
@@ -158,15 +158,20 @@
                             <strong class="textcolor" style="color: #ac0000;">p:</strong> <span
                                 id="footernumber"></span>
                         </p>
+                        <p id="displayemail" class="alttextcolor"
+                            style="color: #333333; font-size: 0.875em;margin:5px 0 5px;line-height:0.938em;"><strong
+                                class="textcolor" style="color: #ac0000;">e:</strong> <span id="footeremail"></span></p>
                         <p id="displaywebsite" class="alttextcolor"
                             style="color: #333333; font-size: 0.875em;line-height:0.938em;display:block;margin:5px 0 5px">
                             <strong class="textcolor" style="color: #ac0000;">w:</strong> <span
                                 id="footerwebsite"></span>
                         </p>
-                        <p id="displayemail" class="alttextcolor"
-                            style="color: #333333; font-size: 0.875em;margin:5px 0 5px;line-height:0.938em;"><strong
-                                class="textcolor" style="color: #ac0000;">e:</strong> <span id="footeremail"></span></p>
                         <br>
+                        <a id="footerinstagram" href=""
+                            style="border-width:0px; border:0px; text-decoration: none;"><img id="instagramimg"
+                                width="35" height="35"
+                                style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;"
+                                src="" alt=""></a>
                         <a id="footerfacebook" href=""
                             style="border-width:0px; border:0px; text-decoration: none!important;"><img id="facebookimg"
                                 width="35" height="35"
@@ -177,11 +182,6 @@
                                 width="35" height="35"
                                 style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;"
                                 src="" alt=""></a><span id="footertwittersp">&nbsp&nbsp</span>
-                        <a id="footerinstagram" href=""
-                            style="border-width:0px; border:0px; text-decoration: none;"><img id="instagramimg"
-                                width="35" height="35"
-                                style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;"
-                                src="" alt=""></a>
                     </td>
                 </tr>
             </table>

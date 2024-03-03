@@ -35,7 +35,7 @@ if (document.getElementById("enterwebsite").value == "") {
 	document.getElementById("displaywebsite").style.display = "none";		
 	document.getElementById("displaywebsite").innerHTML = "";
 	}else{
-	document.getElementById("displaywebsite").innerHTML = "<strong class='textcolor' style='color: #ac0000;'>m:</strong> <span id='footermobile'></span>";
+	document.getElementById("displaywebsite").innerHTML = "<strong class='textcolor' style='color: #ac0000;'>w:</strong> <span id='footerwebsite'></span>";
 	document.getElementById("footerwebsite").innerHTML = document.getElementById("enterwebsite").value;
 	document.getElementById("displaywebsite").style.display = "block";
 	};
@@ -133,6 +133,3 @@ function advancedSettings() {
 function hidelegalinfo() {
 	document.getElementById("legalinfo").style.display = "none";
 };
-
-
-
