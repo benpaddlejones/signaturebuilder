@@ -1,132 +1,204 @@
 <!DOCTYPE html>
 <html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>NSWDoE Email Signature Creator</title>
-<link href="style1.css" rel="stylesheet" type="text/css"/>
-<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>NSWDoE Email Signature Creator</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 </head>
+
 <body>
-<div id="container">
-<div id="buttons">
-<table>
-<tr>
-<td style="vertical-align: middle;text-align:center">	
-<Button onclick="location.href='#howtouse'" >Instructions</button>
-</td>
-<td style="vertical-align: middle;text-align:center">	
-<button onclick="location.href='#formfields'" >Customise</button>
-</td>
-<td style="vertical-align: middle;text-align:center">	
-<button class="btn" data-clipboard-target="#displayfooter" type="button">Copy for<br>Web Outlook</button>
-</td>
-<td style="vertical-align: middle;text-align:center">	
-<button onclick='copyHtml();'>Copy for<br>Desktop Outlook</button>
-</td>
-</tr>
-</table>
-</div>
-<div id="formfields">
-<h1>Customise your email signature</h1>
-<form id="liveform">
-<table>
-<tr>
-<td style="vertical-align: top">
-<p><label for="entername">Name:</label> <input type="text" value="Ben Jones" id="entername"></p>
-<p><label for="enterposition">Position:</label> <input type="text" value="Head Teacher TAS" id="enterposition" ></p>
-</td>
-<th style="vertical-align: top">
-<p><label for="entermobile">Mobile Number:</label> <input type="text" value="0414 744 592" id="entermobile" ></p>
-<p><label for="enteremail">Email Address:</label> <input type="text" value="benjamin.jones21@det.nsw.edu.au" id="enteremail" ></p>
-</th>
-</tr>
-</table>
-</form>
-<div style="text-align:center">
-<Input type="button" id="advsettingsbutton" value="Show School Settings" onclick='advancedSettings();'/>
-</div>
-<form id="advancedform">
-<table>
-<tr>
-<td style="vertical-align: top">
-<p><label for="enterschool">School:</label> <input type="text" value="Tempe High School" id="enterschool" ></p>
-<p><label for="enternumber">Phone Number:</label> <input type="text" value="02 9558 2336" id="enternumber" ></p>
-<p><label for="enterwebsite">School Website URL:</label> <input type="text" value="https://tempe-h.schools.nsw.gov.au/" id="enterwebsite"></p>
-<p><label for="enterlogo">School Logo URL:</label> <input type="text" value="https://tempe-h.schools.nsw.gov.au/content/dam/doe/sws/schools/t/tempe-h/Logo.png" id="enterlogo"></p>
-<p><label for="entercolour">School Colour:</label> <input type="text" value="#ac0000" id="entercolour" ></p>
-<p><label for="enteraltcolour">Alternative Colour:</label> <input type="text" value="#1a2325" id="enteraltcolour" ></p>
-</td>
-<td style="vertical-align: top">
-<p><label for="enterfacebook">Social Media URL 1:</label> <input type="text" value="https://www.facebook.com/TempeHighSRCInfo" id="enterfacebook"></p>
-<p><label for="enterfacebookicon">Social Media Icon 1:</label> <input type="text" value="https://cdn-icons-png.flaticon.com/512/124/124010.png" id="enterfacebookicon"></p>
-<p><label for="enterfacebookalt">Social Media Alt Text 1:</label> <input type="text" value="Facebook icon" id="enterfacebookalt"></p>
-<p><label for="entertwitter">Social Media URL 2:</label> <input type="text" value="" id="entertwitter"></p>
-<p><label for="entertwittericon">Social Media Icon 2:</label> <input type="text" value="" id="entertwittericon"></p>
-<p><label for="entertwitterialt">Social Media Alt Text 2:</label> <input type="text" value="Twitter icon" id="entertwitteralt"></p>
-<p><label for="enterinstagram">Social Media URL 3:</label> <input type="text" value="" id="enterinstagram"></p>
-<p><label for="enterinstagramicon">Social Media Icon 3:</label> <input type="text" value="" id="enterinstagramicon"></p>
-<p><label for="enterinstagramalt">Social Media Alt Text 3:</label> <input type="text" value="Instagram icon" id="enterinstagramalt"></p>
-</td>
-</tr>
-</table>
-</form>
-</div>
-<hr>
-<div id="howtouse">
-<h1>Instructions</h1>
-<ol>
-<li>Make sure you are using your desktop computer, not a mobile or tablet.
-<em class="minor">Internet Explorer is the preferred browser for performing this task.
-</em></li>
-<li>Customise your signature with the above form
-<em class="minor">click 'Show School Settings' to change school details</em></li>
-<li>Click on <a href="https://myemail.det.nsw.edu.au/ecp/?rfr=owa&owaparam=modurl%3D0&p=account" target="blank">this link</a> and sign in to open your options page in a different tab
-<em class="minor">or log into your email and click on the black cog next to your neam in the top right corner, then choose "Options" from the menu.</em></li>
-<li>Choose the "settings" option in the left menu</li>
-<li>Delete your existing signature
-<em class="minor">this must be done before the next step</em></li>
-<li>Return to this tab in your browser</li>
-<li>Click the "Copy for Web Outlook" button</li>
-<li>Select the browser tab with your email settings page open</li>
-<li>Click into the "Email Signature Box" so the cursor can be seen flashing</li>
-<li>Paste (PC: Ctrl + V) (Mac: ⌘ + V)</li>
-<li>Click the "Save" button.</li>	
-</ol>
-</div>
-</div>
-<div id="positionfix">
-<div id="displayfooter">
-<table style="overflow: hidden;font-family: "Segoe UI", Arial, Helvetica, sans-serif;">
-<tr>
-<td  id="displaylogo" style="width:7.5em;text-align:center;vertical-align: middle"><a id="footerlogolink" href="" target="blank " style="border:0px"><img id="footerlogo" src="" style="max-width:7.5em;width: 100%; height: auto;border:0px;vertical-align: middle;" alt=""></a>
-</td>
-<td id="borderbox" style="padding-left:16px;border-left: solid 2px #ac0000;border-top: solid 2px #ac0000;vertical-align: middle;display:block">	
-<h4 id="footername" class="textcolor" style="color: #ac0000; font-size: 1.250em;margin:0px;font-weight:normal!important"></h4>
-<h5 id="footerposition" style="font-size: 1em;margin:0px 0;color:#000;font-weight:normal"></h5>
-<h6 id="footerschool" class="alttextcolor" style="color: #333333; font-size: 0.875em;font-weight:bold;margin:0.4em 0 0px"><strong></strong></h6>
-<br>
-<p id="displaymobile" class="alttextcolor" style="color: #333333; font-size: 0.875em;line-height:0.938em;display:block;margin:5px 0 5px"><strong class="textcolor" style="color: #ac0000;">m:</strong> <span id="footermobile"></span></p>
-<p id="displaynumber" class="alttextcolor" style="color: #333333; font-size: 0.875em;line-height:0.938em;display:block;margin:5px 0 5px"><strong class="textcolor" style="color: #ac0000;">p:</strong> <span id="footernumber"></span></p>
-<p id="displayemail" class="alttextcolor" style="color: #333333; font-size: 0.875em;margin:5px 0 5px;line-height:0.938em;"><strong class="textcolor" style="color: #ac0000;">e:</strong> <span id="footeremail"></span></p>
-<br>
-<a id="footerfacebook" href="" style="border-width:0px; border:0px; text-decoration: none!important;"><img id="facebookimg" width="35" height="35" style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;" src="" alt=""></a><span id="footerfacebooksp">&nbsp&nbsp</span>
-<a id="footertwitter" href="" style="border-width:0px; border:0px; text-decoration: none!important;"><img id="twitterimg" width="35" height="35" style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;" src="" alt=""></a><span id="footertwittersp">&nbsp&nbsp</span>
-<a id="footerinstagram" href="" style="border-width:0px; border:0px; text-decoration: none;"><img id="instagramimg" width="35" height="35" style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;" src="" alt=""></a>
-</td>
-</tr>
-</table>
-<p>I acknowledge the homelands of all Aboriginal people and pay my respect to Country.</p>
-</div>
-</div>
-<div id="legalinfo">
-<h3>Copyright <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a></h3>
-<span>This work is licensed under a </span><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-<span style="display:block">Icons and logos are not hosted by this site and remain the property of their respective owners.</span>
-<h3>Accessability <a href="https://www.w3.org/WAI/WCAG2AAA-Conformance" title="Explanation of WCAG 2.0 Level Triple-A Conformance"> <img height="32" width="88" src="https://www.w3.org/WAI/wcag2AAA" alt="Level Triple-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0"></a></h3>
-<span style="display:block">Conformance Level “AAA”: all Level A, AA, and AAA success criteria are satisfied for this page and the email signatures it produces.</span>
-<div style="text-align:center;"><Input type="button" id="hidelegalbutton" value="Hide legal information" onclick='hidelegalinfo();'/></div>
-</div>
-<script src="script1.js"></script>
+    <div id="container">
+        <div id="buttons">
+            <table>
+                <tr>
+                    <td style="vertical-align: middle;text-align:center">
+                        <Button onclick="location.href='#howtouse'">Instructions</button>
+                    </td>
+                    <td style="vertical-align: middle;text-align:center">
+                        <button onclick="location.href='#formfields'">Customise</button>
+                    </td>
+                    <td style="vertical-align: middle;text-align:center">
+                        <button class="btn" data-clipboard-target="#displayfooter" type="button">Copy for<br>Web
+                            Outlook</button>
+                    </td>
+                    <td style="vertical-align: middle;text-align:center">
+                        <button onclick='copyHtml();'>Copy for<br>Desktop Outlook</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="formfields">
+            <h1>Customise your email signature</h1>
+            <form id="liveform">
+                <table>
+                    <tr>
+                        <td style="vertical-align: top">
+                            <p><label for="entername">Name:</label> <input type="text" value="Ben Jones" id="entername">
+                            </p>
+                            <p><label for="enterposition">Position:</label> <input type="text" value="Head Teacher TAS"
+                                    id="enterposition"></p>
+                        </td>
+                        <th style="vertical-align: top">
+                            <p><label for="entermobile">Mobile Number:</label> <input type="text" value="0414 744 592"
+                                    id="entermobile"></p>
+                            <p><label for="enteremail">Email Address:</label> <input type="text"
+                                    value="benjamin.jones21@det.nsw.edu.au" id="enteremail"></p>
+                        </th>
+                    </tr>
+                </table>
+            </form>
+            <div style="text-align:center">
+                <Input type="button" id="advsettingsbutton" value="Show School Settings"
+                    onclick='advancedSettings();' />
+            </div>
+            <form id="advancedform">
+                <table>
+                    <tr>
+                        <td style="vertical-align: top">
+                            <p><label for="enterschool">School:</label> <input type="text" value="Tempe High School"
+                                    id="enterschool"></p>
+                            <p><label for="enternumber">Phone Number:</label> <input type="text" value="02 9558 2336"
+                                    id="enternumber"></p>
+                            <p><label for="enterwebsite">School Website URL:</label> <input type="text"
+                                    value="https://tempe-h.schools.nsw.gov.au/" id="enterwebsite"></p>
+                            <p><label for="enterlogo">School Logo URL:</label> <input type="text"
+                                    value="https://tempe-h.schools.nsw.gov.au/content/dam/doe/sws/schools/t/tempe-h/logo.png"
+                                    id="enterlogo"></p>
+                            <p><label for="entercolour">School Colour:</label> <input type="text" value="#ac0000"
+                                    id="entercolour"></p>
+                            <p><label for="enteraltcolour">Alternative Colour:</label> <input type="text"
+                                    value="#1a2325" id="enteraltcolour"></p>
+                        </td>
+                        <td style="vertical-align: top">
+                            <p><label for="enterfacebook">Social Media URL 1:</label> <input type="text"
+                                    value="https://www.facebook.com/TempeHighSRCInfo" id="enterfacebook"></p>
+                            <p><label for="enterfacebookicon">Social Media Icon 1:</label> <input type="text"
+                                    value="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+                                    id="enterfacebookicon"></p>
+                            <p><label for="enterfacebookalt">Social Media Alt Text 1:</label> <input type="text"
+                                    value="Facebook icon" id="enterfacebookalt"></p>
+                            <p><label for="entertwitter">Social Media URL 2:</label> <input type="text"
+                                    value="https://www.instagram.com/tempe_hs/" id="entertwitter"></p>
+                            <p><label for="entertwittericon">Social Media Icon 2:</label> <input type="text" value=""
+                                    id="entertwittericon"></p>
+                            <p><label for="entertwitterialt">Social Media Alt Text 2:</label> <input type="text"
+                                    value="Twitter icon" id="entertwitteralt"></p>
+                            <p><label for="enterinstagram">Social Media URL 3:</label> <input type="text"
+                                    value="https://twitter.com/high_tempe" id="enterinstagram"></p>
+                            <p><label for="enterinstagramicon">Social Media Icon 3:</label> <input type="text" value=""
+                                    id="enterinstagramicon"></p>
+                            <p><label for="enterinstagramalt">Social Media Alt Text 3:</label> <input type="text"
+                                    value="Instagram icon" id="enterinstagramalt"></p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <hr>
+        <div id="howtouse">
+            <h1>Instructions</h1>
+            <ol>
+                <li>Make sure you are using your desktop computer, not a mobile or tablet.
+                    <em class="minor">Internet Explorer is the preferred browser for performing this task.
+                    </em>
+                </li>
+                <li>Customise your signature with the above form
+                    <em class="minor">click 'Show School Settings' to change school details</em>
+                </li>
+                <li>Click on <a href="https://myemail.det.nsw.edu.au/ecp/?rfr=owa&owaparam=modurl%3D0&p=account"
+                        target="blank">this link</a> and sign in to open your options page in a different tab
+                    <em class="minor">or log into your email and click on the black cog next to your neam in the top
+                        right corner, then choose "Options" from the menu.</em>
+                </li>
+                <li>Choose the "settings" option in the left menu</li>
+                <li>Delete your existing signature
+                    <em class="minor">this must be done before the next step</em>
+                </li>
+                <li>Return to this tab in your browser</li>
+                <li>Click the "Copy for Web Outlook" button</li>
+                <li>Select the browser tab with your email settings page open</li>
+                <li>Click into the "Email Signature Box" so the cursor can be seen flashing</li>
+                <li>Paste (PC: Ctrl + V) (Mac: ⌘ + V)</li>
+                <li>Click the "Save" button.</li>
+            </ol>
+        </div>
+    </div>
+    <div id="positionfix">
+        <div id="displayfooter">
+            <table style="overflow: hidden;font-family: " Segoe UI", Arial, Helvetica, sans-serif;">
+                <tr>
+                    <td id="displaylogo" style="width:7.5em;text-align:center;vertical-align: middle"><a
+                            id="footerlogolink" href="" target="blank " style="border:0px"><img id="footerlogo" src=""
+                                style="max-width:7.5em;width: 100%; height: auto;border:0px;vertical-align: middle;"
+                                alt=""></a>
+                    </td>
+                    <td id="borderbox"
+                        style="padding-left:16px;border-left: solid 2px #ac0000;border-top: solid 2px #ac0000;vertical-align: middle;display:block">
+                        <h4 id="footername" class="textcolor"
+                            style="color: #ac0000; font-size: 1.250em;margin:0px;font-weight:normal!important"></h4>
+                        <h5 id="footerposition" style="font-size: 1em;margin:0px 0;color:#000;font-weight:normal"></h5>
+                        <h6 id="footerschool" class="alttextcolor"
+                            style="color: #333333; font-size: 0.875em;font-weight:bold;margin:0.4em 0 0px">
+                            <strong></strong>
+                        </h6>
+                        <br>
+                        <p id="displaymobile" class="alttextcolor"
+                            style="color: #333333; font-size: 0.875em;line-height:0.938em;display:block;margin:5px 0 5px">
+                            <strong class="textcolor" style="color: #ac0000;">m:</strong> <span
+                                id="footermobile"></span>
+                        </p>
+                        <p id="displaynumber" class="alttextcolor"
+                            style="color: #333333; font-size: 0.875em;line-height:0.938em;display:block;margin:5px 0 5px">
+                            <strong class="textcolor" style="color: #ac0000;">p:</strong> <span
+                                id="footernumber"></span>
+                        </p>
+                        <p id="displayemail" class="alttextcolor"
+                            style="color: #333333; font-size: 0.875em;margin:5px 0 5px;line-height:0.938em;"><strong
+                                class="textcolor" style="color: #ac0000;">e:</strong> <span id="footeremail"></span></p>
+                        <br>
+                        <a id="footerfacebook" href=""
+                            style="border-width:0px; border:0px; text-decoration: none!important;"><img id="facebookimg"
+                                width="35" height="35"
+                                style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;"
+                                src="" alt=""></a><span id="footerfacebooksp">&nbsp&nbsp</span>
+                        <a id="footertwitter" href=""
+                            style="border-width:0px; border:0px; text-decoration: none!important;"><img id="twitterimg"
+                                width="35" height="35"
+                                style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;"
+                                src="" alt=""></a><span id="footertwittersp">&nbsp&nbsp</span>
+                        <a id="footerinstagram" href=""
+                            style="border-width:0px; border:0px; text-decoration: none;"><img id="instagramimg"
+                                width="35" height="35"
+                                style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;"
+                                src="" alt=""></a>
+                    </td>
+                </tr>
+            </table>
+            <p>I acknowledge the homelands of all Aboriginal people and pay my respect to Country.</p>
+        </div>
+    </div>
+    <div id="legalinfo">
+        <h3>Copyright <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img
+                    alt="Creative Commons Licence" style="border-width:0"
+                    src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a></h3>
+        <span>This work is licensed under a </span><a rel="license"
+            href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons
+            Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+        <span style="display:block">Icons and logos are not hosted by this site and remain the property of their
+            respective owners.</span>
+        <h3>Accessability <a href="https://www.w3.org/WAI/WCAG2AAA-Conformance"
+                title="Explanation of WCAG 2.0 Level Triple-A Conformance"> <img height="32" width="88"
+                    src="https://www.w3.org/WAI/wcag2AAA"
+                    alt="Level Triple-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0"></a></h3>
+        <span style="display:block">Conformance Level “AAA”: all Level A, AA, and AAA success criteria are satisfied for
+            this page and the email signatures it produces.</span>
+        <div style="text-align:center;"><Input type="button" id="hidelegalbutton" value="Hide legal information"
+                onclick='hidelegalinfo();' /></div>
+    </div>
+    <script src="script1.js"></script>
 </body>
+
 </html>
