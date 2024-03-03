@@ -19,7 +19,7 @@ if (document.getElementById("enterwebsite").value == "") {
 	document.getElementById("displaylogo").style.display = "none";
 	document.getElementById("displaylogo").innerHTML = "";	
 	}else{
-	document.getElementById("displaylogo").innerHTML = "<a id='footerlogolink' href='' target='blank' style='border:0px'><img id='footerwebsite' src='' style='max-width:13em;width: 100%; height: auto;border:0px;vertical-align: middle;' alt=''></a>";
+	document.getElementById("displaylogo").innerHTML = "<a id='footerlogolink' href='' target='blank' style='border:0px'><img id='footerlogo' src='' style='max-width:13em;width: 100%; height: auto;border:0px;vertical-align: middle;' alt=''></a>";
 	document.getElementById("footerlogolink").href = document.getElementById("enterwebsite").value;	
 	document.getElementById("displaylogo").style.display = "default";
 	};
@@ -35,7 +35,7 @@ if (document.getElementById("enterwebsite").value == "") {
 	document.getElementById("displaywebsite").style.display = "none";		
 	document.getElementById("displaywebsite").innerHTML = "";
 	}else{
-	document.getElementById("displaywebsite").innerHTML = "<strong class='textcolor' style='color: #ac0000;'>w:</strong> <span id='footerwebsite'></span>";
+	document.getElementById("displaywebsite").innerHTML = "<strong class='textcolor' style='color: #ac0000;'>m:</strong> <span id='footermobile'></span>";
 	document.getElementById("footerwebsite").innerHTML = document.getElementById("enterwebsite").value;
 	document.getElementById("displaywebsite").style.display = "block";
 	};
