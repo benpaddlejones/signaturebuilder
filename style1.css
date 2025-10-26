@@ -23,3 +23,6 @@ button:hover,input[type="button"]:hover{padding:5px 15px;border-radius:5px;backg
 #legalinfo input {text-align:center;margin:10px auto 10px auto}
 #legalinfo h3 {margin-top:6px;margin-bottom:6px}
 .minor {font-size:0.8em;line-height:1em!important;list-style-type:none;display:block}
+#footerinstagram, #footerfacebook, #footertwitter{text-decoration:none;border:none;}
+.social-icon{font-size:24px;color:#000000;margin-right:8px;}
+.social-icon:hover{opacity:0.7;}

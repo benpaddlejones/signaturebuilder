@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>NSWDoE Email Signature Creator</title>
     <link href="style1.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 </head>
 
@@ -65,7 +66,7 @@
                             <p><label for="enterwebsite">School Website URL:</label> <input type="text"
                                     value="https://tempe-h.schools.nsw.gov.au/" id="enterwebsite"></p>
                             <p><label for="enterlogo">School Logo URL:</label> <input type="text"
-                                    value="https://tempe-h.schools.nsw.gov.au/content/dam/doe/sws/schools/t/tempe-h/logo_sml.png"
+                                    value="https://assets.schools.nsw.gov.au/content/dam/doe/sws/schools/t/tempe-h/logo.png"
                                     id="enterlogo"></p>
                             <p><label for="entercolour">School Colour:</label> <input type="text" value="#ac0000"
                                     id="entercolour"></p>
@@ -73,28 +74,12 @@
                                     value="#1a2325" id="enteraltcolour"></p>
                         </td>
                         <td style="vertical-align: top">
-                            <p><label for="enterinstagram">Social Media URL 1:</label> <input type="text"
+                            <p><label for="enterinstagram">Instagram URL:</label> <input type="text"
                                     value="https://www.instagram.com/tempe_hs/" id="enterinstagram"></p>
-                            <p><label for="enterinstagramicon">Social Media Icon 1:</label> <input type="text"
-                                    value="https://cdn-icons-png.flaticon.com/512/1384/1384031.png"
-                                    id="enterinstagramicon"></p>
-                            <p><label for="enterinstagramalt">Social Media Alt Text 1:</label> <input type="text"
-                                    value="Instagram icon" id="enterinstagramalt"></p>
-                            <p><label for="enterfacebook">Social Media URL 2:</label> <input type="text"
-                                    value="https://www.facebook.com/TempeHighSRCInfo" id="enterfacebook"></p>
-                            <p><label for="enterfacebookicon">Social Media Icon 2:</label> <input type="text"
-                                    value="https://cdn-icons-png.flaticon.com/512/20/20837.png" id="enterfacebookicon">
-                            </p>
-                            <p><label for="enterfacebookalt">Social Media Alt Text 2:</label> <input type="text"
-                                    value="Facebook icon" id="enterfacebookalt"></p>
-                            <p><label for="entertwitter">Social Media URL 2:</label> <input type="text"
+                            <p><label for="enterfacebook">Facebook URL:</label> <input type="text"
+                                    value="https://www.facebook.com/TempeHighSchool/" id="enterfacebook"></p>
+                            <p><label for="entertwitter">Twitter/X URL:</label> <input type="text"
                                     value="https://twitter.com/high_tempe" id="entertwitter"></p>
-                            <p><label for="entertwittericon">Social Media Icon 2:</label> <input type="text"
-                                    value="https://cdn-icons-png.flaticon.com/512/11823/11823292.png"
-                                    id="entertwittericon">
-                            </p>
-                            <p><label for="entertwitterialt">Social Media Alt Text 2:</label> <input type="text"
-                                    value="Twitter icon" id="entertwitteralt"></p>
                         </td>
                     </tr>
                 </table>
@@ -167,21 +152,15 @@
                                 id="footerwebsite"></span>
                         </p>
                         <br>
-                        <a id="footerinstagram" href=""
-                            style="border-width:0px; border:0px; text-decoration: none;"><img id="instagramimg"
-                                width="35" height="35"
-                                style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;"
-                                src="" alt=""></a>
-                        <a id="footerfacebook" href=""
-                            style="border-width:0px; border:0px; text-decoration: none!important;"><img id="facebookimg"
-                                width="35" height="35"
-                                style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;"
-                                src="" alt=""></a><span id="footerfacebooksp">&nbsp&nbsp</span>
-                        <a id="footertwitter" href=""
-                            style="border-width:0px; border:0px; text-decoration: none!important;"><img id="twitterimg"
-                                width="35" height="35"
-                                style="border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;"
-                                src="" alt=""></a><span id="footertwittersp">&nbsp&nbsp</span>
+                        <a id="footerinstagram" href="">
+                            <i class="fa-brands fa-instagram social-icon"></i>
+                        </a>
+                        <a id="footerfacebook" href="">
+                            <i class="fa-brands fa-facebook-f social-icon"></i>
+                        </a>
+                        <a id="footertwitter" href="">
+                            <i class="fa-brands fa-x-twitter social-icon"></i>
+                        </a>
                     </td>
                 </tr>
             </table>

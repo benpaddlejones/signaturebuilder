@@ -60,36 +60,24 @@ if (document.getElementById("enterwebsite").value == "") {
 	document.getElementById("footerlogo").alt = document.getElementById("enterschool").value + " logo";	
 	if (document.getElementById("enterfacebook").value == "") {
 	document.getElementById("footerfacebook").style.display = "none";
-	document.getElementById("footerfacebook").innerHTML = ""
 	document.getElementById("footerfacebooksp").innerHTML = ""		
 	}else{
-	document.getElementById("footerfacebook").innerHTML = "<img id='facebookimg' width='35' height='35' style='border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;' src='' alt=''>";	
 	document.getElementById("footerfacebook").href = document.getElementById("enterfacebook").value;
-	document.getElementById("facebookimg").alt = document.getElementById("enterfacebookalt").value;
-	document.getElementById("facebookimg").src = document.getElementById("enterfacebookicon").value;
 	document.getElementById("footerfacebook").style.display = "inline-block";
-	document.getElementById("footerfacebooksp").innerHTML = "&nbsp&nbsp"
+	document.getElementById("footerfacebooksp").innerHTML = "&nbsp;&nbsp;"
 	};
 	if (document.getElementById("entertwitter").value == "") {
 	document.getElementById("footertwitter").style.display = "none";
-	document.getElementById("footertwitter").innerHTML = ""	
 	document.getElementById("footertwittersp").innerHTML = ""	
 	}else{
-	document.getElementById("footertwitter").innerHTML = "<img id='twitterimg' width='35' height='35' style='border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;' src='' alt=''>";
 	document.getElementById("footertwitter").href = document.getElementById("entertwitter").value;
-	document.getElementById("twitterimg").alt = document.getElementById("entertwitteralt").value;
-	document.getElementById("twitterimg").src = document.getElementById("entertwittericon").value;
 	document.getElementById("footertwitter").style.display = "inline-block";
-	document.getElementById("footertwittersp").innerHTML = "&nbsp&nbsp";
+	document.getElementById("footertwittersp").innerHTML = "&nbsp;&nbsp;";
 	};
 	if (document.getElementById("enterinstagram").value == "") {
 	document.getElementById("footerinstagram").style.display = "none"
-	document.getElementById("footerinstagram").innerHTML = ""
 	}else{
-	document.getElementById("footerinstagram").innerHTML = "<img id='instagramimg' width='35' height='35' style='border: none; width: 2.188em; max-width: 2.188em !important; height: 2.188em; max-height: 2.188em !important;' src='' alt=''>";
 	document.getElementById("footerinstagram").href = document.getElementById("enterinstagram").value;
-	document.getElementById("instagramimg").alt = document.getElementById("enterinstagramalt").value;
-	document.getElementById("instagramimg").src = document.getElementById("enterinstagramicon").value;
 	document.getElementById("footerinstagram").style.display = "inline-block";
 	};
 };
