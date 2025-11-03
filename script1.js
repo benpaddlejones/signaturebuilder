@@ -60,22 +60,18 @@ if (document.getElementById("enterwebsite").value == "") {
 	document.getElementById("footerlogo").alt = document.getElementById("enterschool").value + " logo";	
 	if (document.getElementById("enterfacebook").value == "") {
 	document.getElementById("footerfacebook").style.display = "none";
-	document.getElementById("footerfacebooksp").innerHTML = ""		
 	}else{
 	document.getElementById("footerfacebook").href = document.getElementById("enterfacebook").value;
 	document.getElementById("footerfacebook").style.display = "inline-block";
-	document.getElementById("footerfacebooksp").innerHTML = "&nbsp;&nbsp;"
 	};
 	if (document.getElementById("entertwitter").value == "") {
 	document.getElementById("footertwitter").style.display = "none";
-	document.getElementById("footertwittersp").innerHTML = ""	
 	}else{
 	document.getElementById("footertwitter").href = document.getElementById("entertwitter").value;
 	document.getElementById("footertwitter").style.display = "inline-block";
-	document.getElementById("footertwittersp").innerHTML = "&nbsp;&nbsp;";
 	};
 	if (document.getElementById("enterinstagram").value == "") {
-	document.getElementById("footerinstagram").style.display = "none"
+	document.getElementById("footerinstagram").style.display = "none";
 	}else{
 	document.getElementById("footerinstagram").href = document.getElementById("enterinstagram").value;
 	document.getElementById("footerinstagram").style.display = "inline-block";
